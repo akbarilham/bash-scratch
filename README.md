@@ -1,2 +1,2 @@
-# bash-scratch
-Skrip shell sederhana dalam proses pengerjaan proyek di kantor saya 
+# linux-command-scratch
+Skrip shell, systemd, atau konfigurasi sederhana dalam proses pengerjaan proyek di kantor saya 
