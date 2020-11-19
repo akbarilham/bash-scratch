@@ -1,3 +1,4 @@
+#!/bin/bash
 lxc config set nama_container limits.cpu 4
 lxc config set nama_container limits.memory 64GB
 lxc config set nama_container limits.memory.swap false
