@@ -1,0 +1,18 @@
+[Unit]
+Description=SDMS NOSSA Mini Admin
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/npm run dev --prefix /apps/src/sdms-nossa-mini-admin
+WorkingDirectory=/apps/src/sdms-nossa-mini-admin/
+
+StandardOutput=append:/var/log/apps/nossa-mini-output-sysctl.log
+StandardError=append:/var/log/apps/nossa-mini-error-sysctl.log
+SyslogIdentifier=sdms-nossa-mini-admin
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
