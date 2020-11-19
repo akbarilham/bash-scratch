@@ -1,0 +1,11 @@
+#!/bin/bash
+yum install firewalld
+htop
+systemctl enable firewalld
+systemctl start firewalld
+systemctl status firewalld
+firewall-cmd --list-all
+firewall-cmd --zone=public --permanent --add-port=4005/tcp
+firewall-cmd --zone=public --permanent --add-service=ssh
+firewall-cmd --reload
+firewall-cmd --list-all
